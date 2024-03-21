@@ -55,7 +55,7 @@ class PostController extends Controller
             // $data['slug']= Str::slug($data['title']);
             // dd($data);
             Post::create($request->validated());
-            return to_route("post.index")->with('status',"Registro creado.");;
+            return to_route("post.index")->with('status',"Registro creado.");
     }
 
     /**
